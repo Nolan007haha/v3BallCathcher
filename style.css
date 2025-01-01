@@ -1,0 +1,143 @@
+/* Reset default margins and paddings */
+* {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                /* Body Styling */
+                body {
+                    font-family: 'Roboto', sans-serif;
+                    text-align: center;
+                    background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+                    color: #ffffff;
+                    overflow: hidden;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                
+                /* Game Title */
+                h1 {
+                    font-size: 3rem;
+                    color: #00e676;
+                    margin-bottom: 10px;
+                    text-shadow: 2px 2px #263238;
+                }
+                
+                /* Score Display */
+                #score {
+                    font-size: 1.5rem;
+                    color: #ffeb3b;
+                    margin: 10px;
+                    font-weight: bold;
+                    text-shadow: 1px 1px #000;
+                }
+                
+                /* Game Container */
+                #game-container {
+                    width: 90%;
+                    max-width: 600px;
+                    height: 70vh;
+                    margin: 0 auto;
+                    background-color: #263238;
+                    border: 3px solid #00e676;
+                    border-radius: 15px;
+                    overflow: hidden;
+                    position: relative;
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+                }
+                
+                /* Router Styling */
+                #router {
+                    position: absolute;
+                    width: 70px;
+                    height: 70px;
+                    bottom: 10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-color: #00e676;
+                    border-radius: 50%;
+                    background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Router.svg');
+                    background-size: contain;
+                    box-shadow: 0 0 10px #00e676;
+                }
+                
+                /* Packet and Virus Styling */
+                .packet, .virus {
+                    position: absolute;
+                    width: 50px;
+                    height: 50px;
+                    background-size: contain;
+                    border-radius: 50%;
+                    animation: fall linear infinite;
+                }
+                
+                /* Packet Specific Styling */
+                .packet {
+                    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/59/Data-packet.svg');
+                    border: 2px solid #ffeb3b;
+                }
+                
+                /* Virus Specific Styling */
+                .virus {
+                    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/68/Computer-virus.svg');
+                    border: 2px solid #f44336;
+                }
+                
+                /* Overlay Screens */
+                .overlay {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0, 0, 0, 0.85);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    z-index: 10;
+                    padding: 20px;
+                }
+                
+                /* Hidden Class */
+                .hidden {
+                    display: none;
+                }
+                
+                /* Buttons Styling */
+                button {
+                    padding: 15px 30px;
+                    font-size: 1rem;
+                    margin-top: 20px;
+                    cursor: pointer;
+                    border: none;
+                    border-radius: 10px;
+                    background: linear-gradient(135deg, #00e676, #00c853);
+                    color: #fff;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    transition: transform 0.3s ease, background-color 0.3s ease;
+                }
+                
+                button:hover {
+                    transform: scale(1.1);
+                    background-color: #00a646;
+                }
+                
+                /* Input Styling */
+                input {
+                    padding: 10px;
+                    font-size: 1rem;
+                    border: 2px solid #00e676;
+                    border-radius: 5px;
+                    width: 80%;
+                    max-width: 300px;
+                    text-align: center;
+                    margin-bottom: 20px;
+                    background-color: #263238;
+                    color: #fff;
+                }
+                
